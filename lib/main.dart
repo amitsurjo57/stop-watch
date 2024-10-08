@@ -208,7 +208,12 @@ class _HomeScreenState extends State<HomeScreen> {
     setState(() {
       timer!.cancel();
       timerList.clear();
+      hours = 0;
+      minuit = 0;
+      second = 0;
+      milli = 0;
       mainTimer = '00:00:00:00';
+      watchIsStarted = false;
     });
   }
 
